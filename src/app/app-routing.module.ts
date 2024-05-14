@@ -23,10 +23,10 @@ import { ProfileComponent } from "./views/profile/profile.component";
 const routes: Routes = [
   // admin views
   {
-    path: "admin",
+    path: "",
     component: AdminComponent,
     children: [
-      { path: "dashboard", component: DashboardComponent },
+      { path: "", component: DashboardComponent },
       { path: "settings", component: SettingsComponent },
       { path: "tables", component: TablesComponent },
       { path: "maps", component: MapsComponent },
@@ -35,7 +35,7 @@ const routes: Routes = [
   },
   // auth views
   {
-    path: "auth",
+    path: "",
     component: AuthComponent,
     children: [
       { path: "login", component: LoginComponent },
@@ -46,7 +46,7 @@ const routes: Routes = [
   // no layout views
   { path: "profile", component: ProfileComponent },
   { path: "landing", component: LandingComponent },
-  { path: "", component: IndexComponent },
+  { path: "info", component: IndexComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
 
