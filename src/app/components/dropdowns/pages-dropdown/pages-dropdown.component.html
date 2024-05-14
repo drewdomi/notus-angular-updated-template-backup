@@ -1,6 +1,6 @@
 <a
   class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-  href="#pablo"
+  href="#"
   (click)="toggleDropdown($event)"
   #btnDropdownRef
 >
@@ -17,25 +17,25 @@
     Admin Layout
   </span>
   <a
-    [routerLink]="['/admin/dashboard']"
+    [routerLink]="['']"
     class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
   >
     Dashboard
   </a>
   <a
-    [routerLink]="['/admin/settings']"
+    [routerLink]="['/settings']"
     class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
   >
     Settings
   </a>
   <a
-    [routerLink]="['/admin/tables']"
+    [routerLink]="['/tables']"
     class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
   >
     Tables
   </a>
   <a
-    [routerLink]="['/admin/maps']"
+    [routerLink]="['/maps']"
     class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
   >
     Maps
@@ -47,13 +47,13 @@
     Auth Layout
   </span>
   <a
-    [routerLink]="['/auth/login']"
+    [routerLink]="['/login']"
     class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
   >
     Login
   </a>
   <a
-    [routerLink]="['/auth/register']"
+    [routerLink]="['/register']"
     class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
   >
     Register
